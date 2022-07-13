@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
-import { PhotoService } from '../services/photo.service';
+// dependencies
+import { PhotoService } from 'src/app/services/photo.service';
 
 @Component({
   selector: 'app-tab2',
