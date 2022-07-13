@@ -12,6 +12,9 @@ export class Tab2Page {
 
   constructor(public photoService: PhotoService) {}
 
+  async ngOnInit() {
+    await this.photoService.loadSaved();
+  }
   
   public addPhotoToGallery() {
     this.photoService.addNewToGallery();
